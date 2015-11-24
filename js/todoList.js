@@ -70,13 +70,14 @@ $(document).ready (function(){
             $("#todoListTable").$("tr:last").css("background-color", "red");
         });
 
-        if ($('#priorityCheck').is(':checked')) {
-          //debugger;
+        /* // Still need to work on this function 
+          if ($('#priorityCheck').is(':checked')) {
+          //debugger; 
           //console.log("The priority check is checked, let me work on the font-color");
           //console.log ("newRow is :" +newRow);
           $("newRow").css("font-color","red");
         } //Changes the font color of the item to red, if the to-do item is a priority.
-
+        */
         $("#newWord #startDate #requireDate").val("");
       }
 
@@ -84,10 +85,10 @@ $(document).ready (function(){
   
   $(document).on("click","#myCheckbox",function(){
     //debugger;
-    $(this).closest("tr").css({
-      textDecoration: 'line-through',
-      color: '#B2ABB6'
-    });
+      $(this).closest("tr").css({
+        textDecoration: 'line-through',
+        color: '#B2ABB6'
+      });
     }); 
 
   $(document).on("click",".btn-danger", function(){
